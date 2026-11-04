@@ -40,3 +40,4 @@ LEFT JOIN courses c ON c.room = r.code
 WHERE c.code IS NULL
 ORDER BY r.code;
 
+
