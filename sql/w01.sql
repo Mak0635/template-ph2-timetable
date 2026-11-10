@@ -46,4 +46,4 @@ SELECT code, name
 FROM courses
 WHERE teacher ISNULL
 ORDER BY code
->>>>>>> main
+main
