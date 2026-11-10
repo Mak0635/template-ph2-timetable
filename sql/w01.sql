@@ -41,7 +41,9 @@ LIMIT 9;
 
 
 -- 区画6：担当教員が未定の授業（科目コードの順）
+
 SELECT code, name
 FROM courses
 WHERE teacher ISNULL
 ORDER BY code
+main
