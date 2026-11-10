@@ -3,17 +3,17 @@
 -- 曜日（day）は数字のまま返してよい
 
 -- 区画1：月曜日の授業（時限の早い順）
-SELECT period, name, teacher, room
-FROM courses
-WHERE day = 1 
-ORDER BY period ASC
 
+SELECT period, name, teacher, code
+FROM courses
+WHERE day = 1
+ORDER BY period ASC;
 
 -- 区画2：必修科目（科目コードの順）
-SELECT name, credits
+SELECT code, credits
 FROM courses
-WHERE required 
-ORDER BY code 
+WHERE required = true
+ORDER BY code;
 
 
 
@@ -46,4 +46,4 @@ SELECT code, name
 FROM courses
 WHERE teacher ISNULL
 ORDER BY code
-main
+
