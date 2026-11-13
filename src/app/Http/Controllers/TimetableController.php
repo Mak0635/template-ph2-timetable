@@ -19,7 +19,7 @@ class TimetableController extends Controller
         $requiredCourses = DB::table('courses')
             ->select('name', 'credits')
             ->where('required', true)
-            ->orderBy('code')
+            ->orderBy('code')                  
             ->get();
 
         return view('timetable', [
